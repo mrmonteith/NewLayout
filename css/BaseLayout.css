@@ -1,0 +1,133 @@
+/*
+BaseLayout.css - from W3 Schools layout
+Modified - 12/11/2023 - Mike Monteith
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topinfo {
+  overflow: hidden;
+  background-color: #ff0000;
+  text-decoration: black;
+}
+
+/* Style the topinfo links */
+.topinfo a {
+  float: left;
+  display: block;
+  color: #020202;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* Change color on hover */
+.topinfo a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/********** Left Menu Sytle **********/
+
+   ul {
+      background-color: #28bf17;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+   }
+   li {
+      text-align: center;
+   }
+   li a {
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 17px;
+   }
+   li a:hover {
+      background-color: #dd9ede;
+      color: black;
+   }
+   .active-link {
+      background-color: #f53319;
+      color: white;
+   }
+/********** END Left Menu Sytle *********/
+
+/********** Logo Class **********/
+/*.logo
+{
+  float: left;
+}
+*/
+/********** Title Class **********/
+.title
+{
+  width: 70%;
+  color: #ff0000;
+}
+
+/********** Image auto-sizing **********/
+img {
+  float: left;
+  max-width: 25%;
+  width: auto;
+  height: auto;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
