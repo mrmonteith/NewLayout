@@ -25,30 +25,33 @@
     <!-- ********** Content Area ********** -->
     <div class="row">
 
-    <!-- ********** Left Column ********** -->
-      <?php
-      require_once "../includes/leftcolumn.php";
-    ?>
-    <!-- ********************* MAIN CONTENT ************************* -->
+      <!-- ********** Left Column ********** -->
+        <?php
+        require_once "../includes/leftcolumn.php";
+      ?>
+      <!-- ********************* MAIN CONTENT ************************* -->
 
-    <!-- ********** Middle Column ********** -->
+      <!-- ********** Middle Column ********** -->
         <div class="column middle">
           <h2>Script Content</h2>
           <p> Script Content</p>
           <p>More script content</p>
         </div>
 
-    <!-- ********************* END MAIN CONTENT ************************* -->
+      <!-- ********************* END MAIN CONTENT ************************* -->
 
-    <!-- ********** Right Column ********** -->
+      <!-- ********** Right Column ********** -->
       <?php
       require_once "../includes/rightcolumn.php";
-    ?>
+      ?>
+    </div>
 
+    <div>
     <!-- ********** Footer ********** -->
     <?php
         require_once "../includes/footer.php";
       ?>
+    </div>
 
   </body>
 </html>

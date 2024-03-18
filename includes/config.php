@@ -3,7 +3,7 @@
 
     $host = '127.0.0.1';
     define('HOST_NAME', 'http://localhost/');
-    define('TITLE','Mysite Page - change in config ');
+    define('TITLE',' Mysite Page - change in config ');
 ?>
 
 <!DOCTYPE html>
