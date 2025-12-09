@@ -21,6 +21,7 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ### 📸 Screenshots
 
+<!-- 
 **Light Theme (default):**
 
 ![Quick Start Screenshot](docs/quickstart.png)
@@ -29,13 +30,14 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ![Dark Mode Screenshot](docs/quickstart-dark.png)
 
-<!-- 
+
 <p align="center">
   <img src="docs/quickstart.png" alt="Light theme" width="45%">
   <img src="docs/quickstart-dark.png" alt="Dark theme" width="45%">
 </p>
 -->
 
+Click the thumbnails below to view full‑size screenshots:
 <p align="center">
   <a href="docs/quickstart.png">
     <img src="docs/quickstart.png" alt="Light theme" width="40%">
