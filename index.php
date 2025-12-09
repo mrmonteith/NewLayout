@@ -21,7 +21,7 @@
 
   <!-- Top Info -->
   <div class="topinfo">
-    Welcome to <?php echo TITLE; ?> — news - test information line
+    Welcome to <?php echo TITLE; ?> — news - Top Information
   </div>
 
   <!-- Main Layout -->
