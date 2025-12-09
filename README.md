@@ -6,17 +6,6 @@ A modular, responsive PHP + CSS layout designed to serve as the base for BP/LX Q
 
 ---
 # Laying out a standard layout
-** 1  Top (Logo) Section**
-
-** 2  Top Information - Possibly notices or scrolling messages**
-
-** 3  Left Menu - Navigation**
-
-** 4  Main Content Area in the middle - changes per page**
-
-** 5  Right Content - Helpful information for that page**
-
-** 6  Footer - Mainly copyright, Site Name, and possibly advertisement**
 
 ## 📐 Layout Structure
 
