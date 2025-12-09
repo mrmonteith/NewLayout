@@ -1,6 +1,6 @@
-/* BaseLayout.css - Flexbox layout for NewLayout project */
-/* Updated: 2025-12-09 - Michael Monteith */
+/* BaseLayout.css — matches .layout + .column side + .middle */
 
+/* Reset */
 * {
   box-sizing: border-box;
 }
@@ -18,17 +18,12 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  min-height: 80px;            /* Prevent logo from stretching header */
+  min-height: 80px;
   overflow: hidden;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .logo img {
-  height: 60px;                /* Constrain logo height */
+  height: 60px;
   width: auto;
   display: block;
 }
@@ -53,15 +48,15 @@ body {
 /* ===== Main Layout Container ===== */
 .layout {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 10px 20px;
   gap: 20px;
 }
 
-/* Left and Right Columns */
+/* Side Columns (left + right) */
 .column.side {
-  flex: 1;
-  min-width: 200px;
+  flex: 0 0 200px;       /* fixed width */
+  max-width: 200px;
   background-color: #f9f9f9;
   padding: 10px;
   border: 1px solid #ddd;
@@ -69,8 +64,8 @@ body {
 
 /* Middle Content */
 .middle {
-  flex: 2;
-  min-width: 300px;
+  flex: 1 1 auto;        /* expands to fill */
+  min-width: 0;
   background-color: #ffffff;
   padding: 10px;
   border: 1px solid #ddd;
@@ -91,10 +86,6 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-nav li {
-  text-align: center;
 }
 
 nav li a {
@@ -133,5 +124,10 @@ nav li a.active-link {
 
   .title h1 {
     font-size: 1.5rem;
+  }
+
+  .column.side,
+  .middle {
+    max-width: 100%;
   }
 }
