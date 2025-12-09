@@ -40,10 +40,10 @@ Then open [http://localhost:8000](http://localhost:8000) in your browser.
 Click the thumbnails below to view full‑size screenshots:
 <p align="center">
   <a href="docs/quickstart.png">
-    <img src="docs/quickstart.png" alt="Light theme" width="40%">
+    <img src="docs/quickstart.png" alt="Light theme homepage (click to enlarge)" width="40%">
   </a>
   <a href="docs/quickstart-dark.png">
-    <img src="docs/quickstart-dark.png" alt="Dark theme" width="40%">
+    <img src="docs/quickstart-dark.png" alt="Dark theme homepage (click to enlarge)" width="40%">
   </a>
 </p>
 
