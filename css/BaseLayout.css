@@ -1,5 +1,5 @@
 /* BaseLayout.css - Flexbox layout for NewLayout project */
-/* Updated: 2025-12-09 - Minimalist monochrome menu */
+/* Updated: 2025-12-09 - Minimalist monochrome menu with accent */
 
 * {
   box-sizing: border-box;
@@ -81,9 +81,9 @@ body {
   border-top: 1px solid #ccc;
 }
 
-/* ===== Left Menu Styles (Minimalist) ===== */
+/* ===== Left Menu Styles (Minimalist + Accent) ===== */
 nav ul {
-  background-color: #fafafa;   /* subtle off-white */
+  background-color: #fafafa;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -95,20 +95,23 @@ nav li {
 
 nav li a {
   display: block;
-  color: #444;                 /* dark gray text */
+  color: #444;
   padding: 10px;
   text-decoration: none;
   font-size: 17px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 nav li a:hover {
-  background-color: #e0e0e0;   /* light gray hover */
-  color: #000;                 /* black text on hover */
+  background-color: #e0e0e0;
+  color: #000;
 }
 
 nav li a.active-link {
-  background-color: #000;      /* black highlight */
-  color: #fff;                 /* white text */
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  border-left: 4px solid #c00;
 }
 
 /* ===== Responsive Layout ===== */
