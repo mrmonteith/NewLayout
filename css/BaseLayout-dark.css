@@ -1,0 +1,142 @@
+/* BaseLayout-dark.css - Dark mode version of NewLayout project */
+/* Updated: 2025-12-09 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #121212; /* dark background */
+  color: #e0e0e0;            /* light text */
+}
+
+/* ===== Header Section ===== */
+.header {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 80px;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.title h1 {
+  color: #ff5555; /* accent red */
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* ===== Top Info Banner ===== */
+.topinfo {
+  background-color: #b00020; /* deep red banner */
+  color: #fff;
+  padding: 8px 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ===== Main Layout Container ===== */
+.layout {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+/* Side Columns (left + right) */
+.column.side {
+  flex: 0 0 200px;
+  max-width: 200px;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+/* Middle Content */
+.middle {
+  flex: 1 1 auto;
+  min-width: 0;
+  background-color: #181818;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  color: #aaa;
+}
+
+/* ===== Left Menu Styles (Dark Minimalist + Accent) ===== */
+nav ul {
+  background-color: #222;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  color: #ccc;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+nav li a.active-link {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  border-left: 4px solid #ff5555; /* red accent */
+}
+
+/* ===== Responsive Layout ===== */
+@media screen and (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .column.side,
+  .middle {
+    max-width: 100%;
+  }
+}

@@ -1,4 +1,4 @@
-Perfect timing, Michael — adding a **Quick Start section with a screenshot** will make your README instantly more approachable and recruiter‑friendly. Here’s the full updated file with that change integrated:
+Perfect, Michael — here’s the full README updated to include **theme toggling instructions** and a **dark mode screenshot**. This makes it clear to recruiters and collaborators that your project supports both light and dark themes.
 
 ```markdown
 # NewLayout Project
@@ -19,11 +19,28 @@ php -S localhost:8000
 
 Then open [http://localhost:8000](http://localhost:8000) in your browser.
 
-### 📸 Screenshot
+### 📸 Screenshots
 
-Here’s what the layout looks like out of the box:
+**Light Theme (default):**
 
 ![Quick Start Screenshot](docs/quickstart.png)
+
+**Dark Theme:**
+
+![Dark Mode Screenshot](docs/quickstart-dark.png)
+
+---
+
+# 🎨 Theme Support
+
+This project supports **light** and **dark** themes out of the box.
+
+- Set the theme in `config.php`:
+  ```php
+  define('THEME', 'light'); // or 'dark'
+  ```
+- The header will automatically load `css/BaseLayout-light.css` or `css/BaseLayout-dark.css` depending on the constant.
+- Screenshots above show both modes for quick reference.
 
 ---
 
@@ -67,7 +84,8 @@ The site is divided into six main sections:
 NewLayout/
 ├── config.php              # Root configuration file (constants, settings)
 ├── css/
-│   └── BaseLayout.css      # Flexbox layout and styling
+│   ├── BaseLayout-light.css # Light theme stylesheet
+│   └── BaseLayout-dark.css  # Dark theme stylesheet
 ├── templates/
 │   ├── header.php          # Header section
 │   ├── leftcolumn.php      # Navigation menu
@@ -77,7 +95,8 @@ NewLayout/
 │   ├── scripts1.php        # Example script page
 │   └── ...                 # Additional script pages
 ├── docs/
-│   └── quickstart.png      # Screenshot for README
+│   ├── quickstart.png      # Light theme screenshot
+│   └── quickstart-dark.png # Dark theme screenshot
 └── index.php               # Main homepage
 ```
 
@@ -86,7 +105,7 @@ NewLayout/
 ## ⚙️ Usage
 
 - **Configuration**:  
-  Edit `config.php` to set constants like `TITLE` and `HOST_NAME`.
+  Edit `config.php` to set constants like `TITLE`, `HOST_NAME`, and `THEME`.
 
 - **Adding new pages**:  
   Create a new file in `/scripts/` and include the modular templates:
@@ -97,7 +116,7 @@ NewLayout/
   ```
 
 - **Styling**:  
-  Update `css/BaseLayout.css` for layout changes.  
+  Update `css/BaseLayout-light.css` or `css/BaseLayout-dark.css` for layout changes.  
   Responsive rules are included for screens under 768px.
 
 ---
@@ -113,7 +132,7 @@ NewLayout/
 ---
 
 ### ✅ What changed
-- Added a **Quick Start section** with clone/run instructions.  
-- Added a **Screenshot reference** (`docs/quickstart.png`).  
-- Updated file tree to include `docs/quickstart.png`.  
+- Added **Theme Support section** with instructions for toggling light/dark.  
+- Added **Dark Mode Screenshot** reference (`docs/quickstart-dark.png`).  
+- Updated file tree to include both `BaseLayout-light.css` and `BaseLayout-dark.css`.  
 
