@@ -1,5 +1,3 @@
-Perfect, Michael — here’s the full README updated to include **theme toggling instructions** and a **dark mode screenshot**. 
-
 # NewLayout Project
 
 A modular, responsive PHP + CSS layout designed to serve as the base for menu‑driven content in the center and other web applications. Built with **Flexbox** for maintainability and semantic HTML for clarity. 
